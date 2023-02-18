@@ -34,11 +34,10 @@ Você pode [acessar o código fonte do projeto inicial](https://github.com/Truef
 
 # 🛠️ Abrir e rodar o projeto
 
-Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tela de launcher clique em:
+Após baixar o projeto, você pode...
 
 - **Open an Existing Project** (ou alguma opção similar)
 - Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
-- Por fim clique em OK
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
