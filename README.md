@@ -60,5 +60,5 @@ Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tel
 </table>
 
 <h4 align="center">
-By<a href="https://github.com/Eduardo-Roque" target="_blank"> Eduardo-Roque </a>🐠
+By<a href="https://github.com/Truefenix" target="_blank"> Eduardo-Roque </a>🐠
 </h4>
