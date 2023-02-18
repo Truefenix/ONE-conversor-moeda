@@ -50,8 +50,8 @@ Após baixar o projeto, você pode abrir com o Android Studio. Para isso, na tel
 <table align="center">
 <tr>
 <td align="center">
-<a href="https://github.com/Eduardo-Roque">
-<img src="https://avatars.githubusercontent.com/u/94227038?s=400&u=0c061da14bb3c2f5bf9de8467443f49d7068c365&v=4" width="150px;" alt="Eduardo-Roque image" />
+<a href="https://github.com/Truefenix">
+<img src="https://avatars.githubusercontent.com/u/94227038?s=400&u=0c061da14bb3c2f5bf9de8467443f49d7068c365&v=4" width="150px;" alt="Truefenix image" />
 <br />
 <sub><b>Eduardo-Roque</b></sub>
 </a>
