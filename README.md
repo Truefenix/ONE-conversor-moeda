@@ -1,6 +1,6 @@
 <h1 align="center"> CHALLENGE ONE - Conversor de moedas </h1>
 <p align="center">
-    <img src="image/logo-moeda.jpg" alt="LOGO" width="70%" height="10%">
+    <img src="assets/logo-moeda.jpg" alt="LOGO" width="70%" height="10%">
 </p>
 
 ## 🔖 Descrição do Projeto 
