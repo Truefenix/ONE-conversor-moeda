@@ -1,4 +1,4 @@
-<h1 align="center"> CHALLENGE ONE - Conversor de Moédas </h1>
+<h1 align="center"> CHALLENGE ONE - Conversor de moedas </h1>
 <p align="center">
     <img src="image/logo-moeda.jpg" alt="LOGO" width="70%" height="10%">
 </p>
