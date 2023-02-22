@@ -16,10 +16,12 @@ public class Teste {
 	      
 	      if(selecionarValor == "Conversor de Moeda") {
 	    	  
-	    	  String inputValue = JOptionPane.showInputDialog("teste 1");
+	    	  @SuppressWarnings("unused")
+			String inputValue = JOptionPane.showInputDialog("teste 1");
 	      } else if((selecionarValor == "Conversor de Temperatura")) {
 	    	  
-	    	  String inputValue = JOptionPane.showInputDialog("teste 2");
+	    	  @SuppressWarnings("unused")
+			String inputValue = JOptionPane.showInputDialog("teste 2");
 	      } else {
 	    	  
 	    	  // exceção
