@@ -1,0 +1,10 @@
+.conteudo {
+	-fx-background-color: #2C3333;
+	-fx-text-fill: #eee;
+	-fx-font-size: 16px;
+	-fx-font-family: Alkatra;
+}
+
+.label {
+	-fx-text-fill: #eee;
+}
