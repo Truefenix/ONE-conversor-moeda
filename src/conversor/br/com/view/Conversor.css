@@ -1,10 +1,29 @@
 .conteudo {
 	-fx-background-color: #2C3333;
 	-fx-text-fill: #eee;
-	-fx-font-size: 16px;
+	-fx-font-size: 26px;
 	-fx-font-family: Alkatra;
+}
+
+.labelConversor {
+	-fx-text-fill: #eee;
+	-fx-font-size: 30px;
 }
 
 .label {
 	-fx-text-fill: #eee;
+}
+
+.labelResultado {
+	-fx-text-fill: #eee;
+	-fx-font-size: 44px;
+}
+
+.caixaBox {
+	-fx-background-color: #33504a;
+	-fx-font-size: 16px;
+}
+
+.conversorBotao {
+	-fx-font-size: 22px;
 }

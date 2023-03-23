@@ -4,60 +4,89 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class primaryConversor extends Application {
+	String cores[] = { "Reais", "Euro", "Libras Esterlinas", "Peso argentino", "Peso Chileno"};
+	ComboBox<String> caixaDe = new ComboBox<>();
+    ComboBox<String> caixaPara = new ComboBox<>();
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		primaryStage.setTitle("CONVERSOR"); // Titulo Acima da tela
 		
-		Label labelTitulo = new Label("Conversor");
-		labelTitulo.setAlignment(Pos.TOP_CENTER);
+		primaryStage.setResizable(false); // não deixa aumentar a tela
+		
+		//primaryStage.setFullScreen(true); // deixa a tela cheia
+		//primaryStage.setFullScreenExitHint("Aperte Esc para SAIR da Tela cheia");
+		
+		// Icone da Tela
+		Image icon = new Image("/conversor/br/com/view/logo_conversor.png");
+		primaryStage.getIcons().add(icon);
+		
+		Label labelConversor = new Label("Conversor");
+		labelConversor.getStyleClass().add("labelConversor");
+		labelConversor.setAlignment(Pos.TOP_CENTER);
+		labelConversor.setTranslateY(-30);
 		
 		Label labelValor = new Label("Valor");
 		Button BotaoValor = new Button("Valor");
 		
 		HBox boxValor = new HBox();
-		boxValor.getStyleClass().add("label");
-		boxValor.setAlignment(Pos.CENTER);
-		boxValor.setSpacing(10);
 		boxValor.getChildren().add(labelValor);
 		boxValor.getChildren().add(BotaoValor);
+		boxValor.getStyleClass().add("label");
+		boxValor.setAlignment(Pos.CENTER);
+		boxValor.setSpacing(80);
+		boxValor.setTranslateY(-10);
 		
 		Label labelDe = new Label("De");
 		Label labelPara = new Label("Para");
 		
 		HBox boxDePara = new HBox();
-		boxDePara.setAlignment(Pos.CENTER);
-		boxDePara.setSpacing(10);
 		boxDePara.getChildren().add(labelDe);
 		boxDePara.getChildren().add(labelPara);
+		boxDePara.setAlignment(Pos.CENTER);
+		boxDePara.setSpacing(80);
+		boxDePara.setTranslateY(5);
 		
-		Button deBotao = new Button("De");
-		Button paraBotao = new Button("Para");
+		// Caixa BOX
+		caixaDe.getItems().addAll(cores);
+		caixaPara.getItems().addAll(cores);
+		caixaDe.getStyleClass().add("caixaBox");
+		caixaPara.getStyleClass().add("caixaBox");
 		
 		HBox boxBotaoDePara = new HBox();
-		boxBotaoDePara.setSpacing(10);
+		boxBotaoDePara.getChildren().add(caixaDe);
+		boxBotaoDePara.getChildren().add(caixaPara);
 		boxBotaoDePara.setAlignment(Pos.CENTER);
-		boxBotaoDePara.getChildren().add(deBotao);
-		boxBotaoDePara.getChildren().add(paraBotao);
+		boxBotaoDePara.setSpacing(40);
+		boxBotaoDePara.setTranslateY(5);
 		
 		Button conversorBotao = new Button("CONVERTER");
+		conversorBotao.setTranslateY(20);
+		conversorBotao.getStyleClass().add("conversorBotao");
 		
-		Button resultado = new Button("0");
+		Label labelResultado = new Label();
+		labelResultado.getStyleClass().add("labelResultado");
+		labelResultado.setTranslateY(20);
+		// Recebe o resultado
+		labelResultado.setText(Integer.toString(0));
 		
 		VBox boxConversor = new VBox();
 		boxConversor.getStyleClass().add("conteudo");
 		boxConversor.setAlignment(Pos.CENTER);
-		boxConversor.getChildren().add(labelTitulo);
+		boxConversor.getChildren().add(labelConversor);
 		boxConversor.getChildren().add(boxValor);
 		boxConversor.getChildren().add(boxDePara);
 		boxConversor.getChildren().add(boxBotaoDePara);
 		boxConversor.getChildren().add(conversorBotao);
-		boxConversor.getChildren().add(resultado);
+		boxConversor.getChildren().add(labelResultado);
 		
 		String caminhoCss = getClass()
 				.getResource("/conversor/br/com/view/Conversor.css").toExternalForm();
