@@ -107,6 +107,10 @@ public class primaryConversor extends Application {
 		conversorBotao = new Button("CONVERTER");
 		conversorBotao.setOnAction(e -> {
 			double numero;
+			String listaDe = caixaDe.getValue();
+			String listaPara = caixaPara.getValue();
+			String duasListas = "";
+			
 			
 			try {
 				numero = Double.parseDouble(textValor.getText());
@@ -116,26 +120,174 @@ public class primaryConversor extends Application {
 				// Recebe no texto resultado
 				labelResultado.setText(Double.toString(numero));
 				
-				String listaMoeda = caixaDe.getValue();
-				
-				switch(listaMoeda) {
+				switch(listaDe) {
 				case "Reais":
 					System.out.println("Reais");
+					
+					if(listaPara.equals("Reais")) {
+						labelConversor.setText("Choose different currencies");
+						
+					} else if(listaPara.equals("Dólar")) {
+						double realEmDolar = numero * 5.44;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Euro")) {
+						double realEmDolar = numero * 5.66;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Libras Esterlinas")) {
+						double realEmDolar = numero * 6.41;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso argentino")) {
+						double realEmDolar = numero * 0.026;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso Chileno")) {
+						double realEmDolar = numero * 0.0065;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					}
 					break;
 				case "Dólar":
 					System.out.println("Dólar");
+					
+					if(listaPara.equals("Dólar")) {
+						labelConversor.setText("Choose different currencies");
+						
+					} else if(listaPara.equals("Reais")) {
+						double realEmDolar = numero * 5.25;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Euro")) {
+						double realEmDolar = numero * 0.93;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Libras Esterlinas")) {
+						double realEmDolar = numero * 0.82;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso argentino")) {
+						double realEmDolar = numero * 205.30;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso Chileno")) {
+						double realEmDolar = numero * 810.50;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					}
 					break;
 				case "Euro":
 					System.out.println("Euro");
+					
+					if(listaPara.equals("Euro")) {
+						labelConversor.setText("Choose different currencies");
+						
+					} else if(listaPara.equals("Reais")) {
+						double realEmDolar = numero * 5.66;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Dólar")) {
+						double realEmDolar = numero * 1.08;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Libras Esterlinas")) {
+						double realEmDolar = numero * 0.88;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso argentino")) {
+						double realEmDolar = numero * 221.30;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso Chileno")) {
+						double realEmDolar = numero * 873.68;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					}
 					break;
 				case "ELibras Esterlinas":
 					System.out.println("Libras Esterlinas");
+					
+					if(listaPara.equals("Libras Esterlinas")) {
+						labelConversor.setText("Choose different currencies");
+						
+					} else if(listaPara.equals("Reais")) {
+						double realEmDolar = numero * 6.41;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Dólar")) {
+						double realEmDolar = numero * 1.22;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Euro")) {
+						double realEmDolar = numero * 1.13;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso argentino")) {
+						double realEmDolar = numero * 251.02;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso Chileno")) {
+						double realEmDolar = numero * 991.00;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					}
 					break;
 				case "Peso argentino":
 					System.out.println("Peso argentino");
+					
+					if(listaPara.equals("Peso argentino")) {
+						labelConversor.setText("Choose different currencies");
+						
+					} else if(listaPara.equals("Reais")) {
+						double realEmDolar = numero * 0.026;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Dólar")) {
+						double realEmDolar = numero * 0.0049;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Euro")) {
+						double realEmDolar = numero * 0.0045;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Libras Esterlinas")) {
+						double realEmDolar = numero * 0.0040;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso Chileno")) {
+						double realEmDolar = numero * 3.95;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					}
 					break;
 				case "Peso Chileno":
 					System.out.println("Peso Chileno");
+					
+					if(listaPara.equals("Peso Chileno")) {
+						labelConversor.setText("Choose different currencies");
+						
+					} else if(listaPara.equals("Reais")) {
+						double realEmDolar = numero * 0.0065;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Dólar")) {
+						double realEmDolar = numero * 0.0012;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Euro")) {
+						double realEmDolar = numero * 0.0011;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Libras Esterlinas")) {
+						double realEmDolar = numero * 0.0010;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					} else if(listaPara.equals("Peso argentino")) {
+						double realEmDolar = numero * 0.25;
+						labelResultado.setText(Double.toString(realEmDolar));
+						
+					}
 					break;
 				}
 
