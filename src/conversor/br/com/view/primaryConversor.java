@@ -1,7 +1,7 @@
 package conversor.br.com.view;
 
+import conversor.br.com.controller.ConversaoMoeda;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -14,13 +14,13 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class primaryConversor extends Application {
-	String cores[] = {"Reais", "Euro", "Libras Esterlinas", "Peso argentino", "Peso Chileno" };
+	private ConversaoMoeda listaMoeda = new ConversaoMoeda();
 	private ComboBox<String> caixaDe = new ComboBox<>();
 	private ComboBox<String> caixaPara = new ComboBox<>();
-	Label labelConversor = new Label("Conversor");
-	private Label labelResultado = new Label();
+	private Label labelConversor = new Label("Conversor");
 	private TextField textValor = new TextField("0");
 	private Button conversorBotao;
+	private Label labelResultado = new Label();
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -62,8 +62,8 @@ public class primaryConversor extends Application {
 		boxDePara.setTranslateY(5);
 
 		// Caixa BOX
-		caixaDe.getItems().addAll(cores);
-		caixaPara.getItems().addAll(cores);
+		caixaDe.getItems().addAll(listaMoeda.listaDeMoedas());
+		caixaPara.getItems().addAll(listaMoeda.listaDeMoedas());
 		caixaDe.getStyleClass().add("caixaBox");
 		caixaPara.getStyleClass().add("caixaBox");
 
@@ -79,9 +79,9 @@ public class primaryConversor extends Application {
 		conversorBotao.setTranslateY(20);
 		conversorBotao.getStyleClass().add("conversorBotao");
 
+		// Recebe o resultado
 		labelResultado.getStyleClass().add("labelResultado");
 		labelResultado.setTranslateY(20);
-		// Recebe o resultado
 
 		VBox boxConversor = new VBox();
 		boxConversor.getStyleClass().add("conteudo");
@@ -112,13 +112,39 @@ public class primaryConversor extends Application {
 				numero = Double.parseDouble(textValor.getText());
 				System.out.println(numero);
 				labelConversor.setText("Conversor");
+				
+				// Recebe no texto resultado
+				labelResultado.setText(Double.toString(numero));
+				
+				String listaMoeda = caixaDe.getValue();
+				
+				switch(listaMoeda) {
+				case "Reais":
+					System.out.println("Reais");
+					break;
+				case "Dólar":
+					System.out.println("Dólar");
+					break;
+				case "Euro":
+					System.out.println("Euro");
+					break;
+				case "ELibras Esterlinas":
+					System.out.println("Libras Esterlinas");
+					break;
+				case "Peso argentino":
+					System.out.println("Peso argentino");
+					break;
+				case "Peso Chileno":
+					System.out.println("Peso Chileno");
+					break;
+				}
 
 			} catch (NumberFormatException excecao) {
 				labelConversor.setText("Enter Only Number...");
 			} catch (Exception excecao) {
 				System.out.println(excecao);
 			}
-			//labelResultado.setText(Integer.toString(0));
+			//labelResultado.setText(Double.toString(0));
 		});
 	}
 

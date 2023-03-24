@@ -26,6 +26,7 @@
 }
 
 .caixaBox {
+	-fx-text-fill: #eee;
 	-fx-background-color: #4E6E81;
 	-fx-font-size: 16px;
 }
