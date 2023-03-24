@@ -1,5 +1,5 @@
 .conteudo {
-	-fx-background-color: #2C3333;
+	-fx-background-color: #181D31;
 	-fx-text-fill: #eee;
 	-fx-font-size: 26px;
 	-fx-font-family: Alkatra;
@@ -14,16 +14,24 @@
 	-fx-text-fill: #eee;
 }
 
+.labelText {
+	-fx-text-fill: #eee;
+	-fx-font-size: 20px;
+	-fx-background-color: #181d31;
+}
+
 .labelResultado {
 	-fx-text-fill: #eee;
 	-fx-font-size: 44px;
 }
 
 .caixaBox {
-	-fx-background-color: #33504a;
+	-fx-background-color: #4E6E81;
 	-fx-font-size: 16px;
 }
 
 .conversorBotao {
+	-fx-background-color: #4E6E81;
 	-fx-font-size: 22px;
+	-fx-text-fill: #eee;
 }
