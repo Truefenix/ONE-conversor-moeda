@@ -139,6 +139,8 @@ public class primaryConversor extends Application {
 					break;
 				}
 
+			} catch (NullPointerException excecao) {
+				labelConversor.setText("choose a currency");
 			} catch (NumberFormatException excecao) {
 				labelConversor.setText("Enter Only Number...");
 			} catch (Exception excecao) {
