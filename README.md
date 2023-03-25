@@ -21,18 +21,24 @@ Lembrando que deve ser possível também converter de forma inversa ou seja:
         - Converter de Peso argentino a  Reais
         - Converter de Peso Chileno a Reais
 
-:construction: Projeto em construção :construction:
+:construction: Projeto finalizado :construction:
 
 # :hammer: Funcionalidades do projeto
 <p align="center">
-    <img src="" alt="GIF-FUNCIONALIDADE" width="50%" height="50%">
+    <img src="assets/capa.png" alt="GIF-FUNCIONALIDADE" width="100%" height="100%">
 </p>
+
+# ⚠️ Warning
+        - Converter sómente números.
+        - A opção De não pode ser igual a opção Para.
+        - O Valor não pode ser nulo.
 
 # 📁 Acesso ao projeto
 
-Você pode [acessar o código fonte do projeto inicial](https://github.com/Truefenix/ONE-conversor-moeda) ou [baixá-lo](https://github.com/Truefenix/ONE-conversor-moeda).
+Você pode [acessar o código fonte do projeto inicial](https://github.com/Truefenix/ONE-conversor-moeda/tree/master/src/conversor/br/com) ou [baixá-lo](https://github.com/Truefenix/ONE-conversor-moeda).
 
 # 🛠️ Abrir e rodar o projeto
+:construction: Em construção o .jar :construction:
 
 Após baixar o projeto, você pode...
 
