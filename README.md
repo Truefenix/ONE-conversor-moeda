@@ -51,6 +51,11 @@ Após baixar o projeto, você pode...
 - ``Eclipse IDEA``
 - ``Paradigma de orientação a objetos``
 
+## 🛡️ Badge do Desafio
+<div>
+    <a href="https://github.com/Truefenix/ONE-conversor-moeda" target="_blank"><img src="https://raw.githubusercontent.com/Truefenix/Truefenix/main/.github/workflows/assets/cms_files_10224_1671211937Prancheta_8.png" alt="Badge-Codificador" width="35%" />
+</div>
+
 ##  🐠 Author
 <table align="center">
 <tr>
