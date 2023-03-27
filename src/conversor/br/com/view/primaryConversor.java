@@ -26,10 +26,10 @@ public class primaryConversor extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		primaryStage.setTitle("CONVERSOR"); // Titulo Acima da tela
 
-		primaryStage.setResizable(false); // n鉶 deixa aumentar a tela
+		primaryStage.setResizable(false); // n锟給 deixa aumentar a tela
 
-		// primaryStage.setFullScreen(true); // deixa a tela cheia
-		// primaryStage.setFullScreenExitHint("Aperte Esc para SAIR da Tela cheia");
+		//primaryStage.setFullScreen(true); // deixa a tela cheia
+		//primaryStage.setFullScreenExitHint("Aperte Esc para SAIR da Tela cheia");
 
 		// Icone da Tela
 		Image icon = new Image("/conversor/br/com/view/logo_conversor.png");
@@ -74,7 +74,7 @@ public class primaryConversor extends Application {
 		boxBotaoDePara.setSpacing(40);
 		boxBotaoDePara.setTranslateY(5);
 
-		// Bot鉶 Converter
+		// Bot锟給 Converter
 		converter();
 		conversorBotao.setTranslateY(20);
 		conversorBotao.getStyleClass().add("conversorBotao");
@@ -127,7 +127,7 @@ public class primaryConversor extends Application {
 					if(listaPara.equals("Reais")) {
 						labelConversor.setText("Choose different currencies");
 						
-					} else if(listaPara.equals("D髄ar")) {
+					} else if(listaPara.equals("D贸lar")) {
 						double realEmDolar = numero * 5.44;
 						labelResultado.setText(Double.toString(realEmDolar));
 						
@@ -149,10 +149,10 @@ public class primaryConversor extends Application {
 						
 					}
 					break;
-				case "D髄ar":
-					System.out.println("D髄ar");
+				case "D锟絣ar":
+					System.out.println("D贸lar");
 					
-					if(listaPara.equals("D髄ar")) {
+					if(listaPara.equals("D贸lar")) {
 						labelConversor.setText("Choose different currencies");
 						
 					} else if(listaPara.equals("Reais")) {
@@ -187,7 +187,7 @@ public class primaryConversor extends Application {
 						double realEmDolar = numero * 5.66;
 						labelResultado.setText(Double.toString(realEmDolar));
 						
-					} else if(listaPara.equals("D髄ar")) {
+					} else if(listaPara.equals("D贸lar")) {
 						double realEmDolar = numero * 1.08;
 						labelResultado.setText(Double.toString(realEmDolar));
 						
@@ -215,7 +215,7 @@ public class primaryConversor extends Application {
 						double realEmDolar = numero * 6.41;
 						labelResultado.setText(Double.toString(realEmDolar));
 						
-					} else if(listaPara.equals("D髄ar")) {
+					} else if(listaPara.equals("D贸lar")) {
 						double realEmDolar = numero * 1.22;
 						labelResultado.setText(Double.toString(realEmDolar));
 						
@@ -243,7 +243,7 @@ public class primaryConversor extends Application {
 						double realEmDolar = numero * 0.026;
 						labelResultado.setText(Double.toString(realEmDolar));
 						
-					} else if(listaPara.equals("D髄ar")) {
+					} else if(listaPara.equals("D贸lar")) {
 						double realEmDolar = numero * 0.0049;
 						labelResultado.setText(Double.toString(realEmDolar));
 						
@@ -271,7 +271,7 @@ public class primaryConversor extends Application {
 						double realEmDolar = numero * 0.0065;
 						labelResultado.setText(Double.toString(realEmDolar));
 						
-					} else if(listaPara.equals("D髄ar")) {
+					} else if(listaPara.equals("D贸lar")) {
 						double realEmDolar = numero * 0.0012;
 						labelResultado.setText(Double.toString(realEmDolar));
 						

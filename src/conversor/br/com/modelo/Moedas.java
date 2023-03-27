@@ -1,7 +1,7 @@
 package conversor.br.com.modelo;
 
 public class Moedas {
-	private double reais = 0.19; // 1 real em dólar
+	private double reais = 0.19; // 1 real em dï¿½lar
 	private double dolares;
 	private double euros;
 	private double librasEsterlinas;
@@ -9,7 +9,7 @@ public class Moedas {
 	private double pesoChileno;
 	
 	public String[] getMoedas() {
-		String ListaMoedas[] = {"Reais", "Dólar", "Euro", 
+		String ListaMoedas[] = {"Reais", "DÃ³lar", "Euro", 
 				"Libras Esterlinas", "Peso argentino", "Peso Chileno"};
 		return ListaMoedas;
 	}
