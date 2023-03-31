@@ -109,7 +109,6 @@ public class primaryConversor extends Application {
 			double numero;
 			String listaDe = caixaDe.getValue();
 			String listaPara = caixaPara.getValue();
-			String duasListas = "";
 			
 			
 			try {
