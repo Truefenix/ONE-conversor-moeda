@@ -287,6 +287,7 @@ public class primaryConversor extends Application {
 						labelResultado.setText(Double.toString(realEmDolar));
 						
 					}
+					
 					break;
 				}
 
