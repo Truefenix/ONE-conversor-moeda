@@ -56,7 +56,7 @@ Após baixar o projeto, você pode...
     <a href="https://github.com/Truefenix/ONE-conversor-moeda" target="_blank"><img src="https://raw.githubusercontent.com/Truefenix/Truefenix/main/.github/workflows/assets/cms_files_10224_1671211937Prancheta_8.png" alt="Badge-Codificador" width="35%" />
 </div>
 
-##  🐠 Author
+##  🪓 Author
 <table align="center">
 <tr>
 <td align="center">
@@ -70,5 +70,5 @@ Após baixar o projeto, você pode...
 </table>
 
 <h4 align="center">
-By<a href="https://github.com/Truefenix" target="_blank"> Eduardo-Roque </a>🐠
+By<a href="https://github.com/Truefenix" target="_blank"> Truefenix </a>🪓
 </h4>
